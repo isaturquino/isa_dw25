@@ -51,6 +51,14 @@ CelParaFah(30)
 CelParaFah(21)
 
 //EXERCÍCIO 10
+function contarPalavras(frase) {
+    let palavras = frase.trim().split(/\s+/)
+    console.log(palavras.length)
+}
+
+contarPalavras("Olá mundo")                    
+contarPalavras("Este é um teste")             
+contarPalavras("Exemplo com     espaços")      
 
 //EXERCÍCIO 11 
 function transformaSeg(segundos) {
@@ -63,4 +71,49 @@ function transformaSeg(segundos) {
 transformaSeg(4508)
 transformaSeg(3600)
 transformaSeg(78568)
+
+//EXERCÍCIO 12 
+// a)
+function equacaoA (x,y){
+    let resultado = (Math.sqrt(Math.pow(x, 2) + Math.pow(y, 3)) / Math.abs(x + y)).toFixed(3)
+    return console.log (resultado)
+}
+equacaoA(2, 3 )
+
+// b)
+function equacaoB(x) {
+    let resultado = ((1 + Math.sin(x)) / (1 + Math.cos(x))).toFixed(3)
+    return console.log(resultado)
+}
+equacaoB(Math.PI / 4)
+equacaoB(Math.PI / 6)
+
+// c)
+function equacaoC(x) {
+    let resultado = (1 + (1 / x) + (1 / Math.pow(x, 2)) + (1 / Math.pow(x, 3)) + (1 / Math.pow(x, 4))).toFixed(3)
+    return console.log(resultado)
+}
+equacaoC(2)
+equacaoC(1)
+
+// d)
+function equacaoD(x, y) {
+    let frac = x / y
+    let numerador = x - Math.pow(frac, 2)
+    let denominador = x - Math.pow(frac, 2)
+    let resultado = (frac - (numerador / denominador)).toFixed(3)
+    return console.log(resultado)
+}
+equacaoD(5, 6)
+equacaoD(1, 2)
+
+// c)
+function equacaoE(x) {
+    let resultado = Math.sqrt(Math.PI + Math.sqrt(Math.pow(Math.E, 3) + Math.sqrt(4 + Math.sqrt(x)))).toFixed(3)
+    return console.log(resultado)
+}
+
+equacaoE(9)
+equacaoE(1)
+
 
