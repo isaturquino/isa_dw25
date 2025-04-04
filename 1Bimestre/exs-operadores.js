@@ -42,4 +42,25 @@ ePrimo(11); // "É PRIMO!"
 ePrimo(6);  // "Não é primo"
 ePrimo(2);  // "É PRIMO!"
 
+//EXERCÍCIO 9
+function CelParaFah(c){
+    let fahrenheit = c * 1.8 + 32
+    return console.log(fahrenheit.toFixed(1))
+}
+CelParaFah(30)
+CelParaFah(21)
+
+//EXERCÍCIO 10
+
+//EXERCÍCIO 11 
+function transformaSeg(segundos) {
+    let horas = Math.round(segundos / 3600);
+    let minutos = Math.round((segundos % 3600) / 60);
+    let segs = segundos % 60;
+    
+    console.log(horas + ":" + minutos + ":" + segs);
+}
+transformaSeg(4508)
+transformaSeg(3600)
+transformaSeg(78568)
 
