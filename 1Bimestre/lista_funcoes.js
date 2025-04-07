@@ -28,3 +28,14 @@ quadrante(-2, 2)
 quadrante(-2, -2)  
 quadrante(0, 5)  
 quadrante(5, 0)  
+
+//  EXERCÍCIO 4 
+function palindromo(string){
+    let reverse = string.split('').reverse().join('')
+    if (reverse == string){
+        return console.log("PALÍNDROMO")
+    }else{
+        return console.log("Não é um PALÍNDROMO")
+    }
+}
+palindromo("batata")
