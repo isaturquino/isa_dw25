@@ -43,3 +43,37 @@ console.log(v2); // Saída: [1, 4, 9, 16, 25]
 //b) com o map:
 const v3 = v1.map(function(numero){return numero*numero})
 console.log(v3); // Saída: [1, 4, 9, 16, 25]
+
+
+// EXERCÍCIOS 6 
+const a = [1, 2, 3, 4, 5, 6]
+// a) abordagem tradicional
+const pares1 = []
+for (let i = 0; i < a.length; i++) {
+    if (a[i] % 2 === 0) {
+      pares1.push(a[i]);
+    }
+  }
+console.log(pares1)
+// b) com filter
+const pares2 = a.filter(function (x){return x % 2 == 0})
+console.log(pares2)
+
+// EXERCÍCIO 10 
+const palavras = ["manga", "uva", "maçã", "abacaxi", "kiwi"]
+function palavrasCrescente(palavras) {
+    return palavras.sort((a, b) => a.length - b.length)
+}
+console.log(palavrasCrescente(palavras))
+
+//EXERCÍCIO 12
+function menorElemento(array) {
+    const menor = Math.min(...array)        
+    const posicao = array.indexOf(menor)        
+    console.log(`Menor elemento: ${menor}`)
+    console.log(`Posição: ${posicao}`)
+}
+const numeros = [8, 3, 7, 2, 10]
+menorElemento(numeros)
+
+
