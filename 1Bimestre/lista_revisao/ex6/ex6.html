@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Lâmpada</title>
+</head>
+<body style="background-color: white;width: 100%;">
+    <h1 style="text-align: center; margin-top: 4rem;">CLIQUE E ACENDA</h1>
+    <img id="lampada" src="lampada-off.jpg" alt=" "onclick="acender()" style="display: flex; justify-self: center; width: 30rem;">
+
+    <script>
+
+        function acender(){
+            let lampada = document.getElementById("lampada")
+            if (lampada.src.includes("lampada-off.jpg")) {
+                lampada.src = "lampada-on.jpg"
+            } else {
+                lampada.src = "lampada-off.jpg"
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>
