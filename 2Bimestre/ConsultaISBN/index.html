@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta ISBN</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Consulta ISBN</h1>
+    </header>
+    <div>
+        <div id="consulta">
+            <form id="form" method="GET">
+                <input id="isbn" type="text" name="isbn" placeholder="Digite o ISBN" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <p>Consulte informações de livros publicados no Brasil através do ISBN</p>
+        </div>
+        <div id="resultados">
+            <p id="titulo">Título: </p>
+            <p id="autor">Autor: </p>
+            <p id="editora">Editora: </p>
+            <p id="ano">Ano de publicação: </p>
+            <p id="paginas">Quantidade de páginas: </p>
+            <p id="assunto">Assunto: </p>
+
+        </div>
+    </div>
+    <script src="jscript.js"></script>
+</body>
+</html>
