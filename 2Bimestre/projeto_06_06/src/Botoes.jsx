@@ -1,3 +1,4 @@
+import  "./Botoes.css"
 function Botoes({ onIncrement, onDecrement }){
     return(
         <div>
