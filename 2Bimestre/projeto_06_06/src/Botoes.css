@@ -1,4 +1,10 @@
 button{
     background-color: #40916c;
+    color: #1b4332;
     border-radius: 30%;
+    border: none;
+    height: 3.75rem;
+    width: 3.75rem;
+    margin: .625rem;
+    font-size: 1.875rem;
 }

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Botoes from "./Botoes"
-import "./Contador.css"
+
 
 export default function Contador (){
     const [contador, setContador] = useState(0);
@@ -11,7 +11,7 @@ export default function Contador (){
     return(
         <div className="contador">
             <h2>Contador</h2>
-            <div>{contador}</div>
+            <div className="numero">{contador}</div>
             <Botoes onIncrement={incrementar} onDecrement={decrementar} />
         </div>
     );
