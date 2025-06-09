@@ -1,8 +1,10 @@
-// import  "./Botao.css"
-function Botao (){
-    return(
-        <div>
-            <button>Calcular IMC</button>
-        </div>
-    )
+import "./Botao.css"
+function Botao({ onClick }) {
+  return (
+    <div>
+      <button onClick={onClick}>Calcular IMC</button>
+    </div>
+  );
 }
+
+export default Botao;
