@@ -1,6 +1,7 @@
 import Input from './Input'
 import Botao from './Botao'
 import Calculadora from './Calculadora'
+import Resultado from './Resultado'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Input/>
             <Botao/>
             <Calculadora/>
+            <Resultado/>
         </div>
 
     )
