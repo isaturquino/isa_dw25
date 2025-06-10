@@ -3,11 +3,14 @@ import './App.css'
 
 function App() {
     return(
-        <div>
-            <div>
+        <div id='container'>
+            <div className='header'>
                 <h1>Projeto calculadora de IMC</h1>
             </div>
-            <Calculadora/>
+            <div className='main'>
+                <Calculadora/>
+            </div>
+            
         </div>
 
     )
