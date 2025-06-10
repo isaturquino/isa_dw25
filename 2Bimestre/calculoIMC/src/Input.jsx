@@ -2,8 +2,8 @@ import "./Input.css"
 function Input({ peso, altura, onPesoChange, onAlturaChange }){
     return(
         <div>
-            <input type="number" name="peso" id="peso" value={peso} onChange={onPesoChange}/>
-            <input type="number" name="altura" id="altura" value={altura} onChange={onAlturaChange} />
+            <input type="number" name="peso" id="peso" placeholder="Peso(kg)" value={peso} onChange={onPesoChange}/>
+            <input type="number" name="altura" id="altura" placeholder="Altura(m)" value={altura} onChange={onAlturaChange} />
         </div>
     )
 }
