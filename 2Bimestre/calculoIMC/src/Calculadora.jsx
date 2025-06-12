@@ -15,7 +15,7 @@ function Calculadora() {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h2>Calcular IMC</h2>
       <Input
         peso={peso}

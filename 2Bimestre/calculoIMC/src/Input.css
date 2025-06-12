@@ -1,0 +1,14 @@
+.dados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #a53860;
+    border-radius: 5%;
+    font-size: 1rem;
+}

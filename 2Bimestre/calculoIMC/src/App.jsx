@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
     return(
-        <div id='container'>
+        <div>
             <div className='header'>
                 <h1>Projeto calculadora de IMC</h1>
             </div>

@@ -1,0 +1,15 @@
+.container{
+  width: 400px;
+  height: 350px;
+  border: 2px solid #a53860;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe5d9;
+  border-radius: 2%;
+}
+h2{
+    color: #a53860;
+
+}
