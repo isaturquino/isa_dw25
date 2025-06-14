@@ -1,10 +1,9 @@
 import "./Botao.css"
-function Botao({ onClick }) {
+function Botao({ onClick, disabled }) {
   return (
-    <div>
-      <button onClick={onClick}>Calcular IMC</button>
-    </div>
+    <button onClick={onClick} disabled={disabled}>Calcular IMC</button>
   );
 }
 
 export default Botao;
+

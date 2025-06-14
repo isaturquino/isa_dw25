@@ -1,3 +1,4 @@
+import "./Resultado.css"
 function Resultado({ imc }) {
   if (!imc) return null
 
@@ -13,7 +14,7 @@ function Resultado({ imc }) {
   else categoria = 'Obesidade de classe 3';
 
   return (
-    <div>
+    <div className="resultado">
       <p>Seu IMC: {imcNum.toFixed(2)}</p>
       <p>Categoria: {categoria}</p>
     </div>

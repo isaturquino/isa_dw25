@@ -23,7 +23,7 @@ function Calculadora() {
         onPesoChange={(e) => setPeso(e.target.value)}
         onAlturaChange={(e) => setAltura(e.target.value)}
       />
-      <Botao onClick={calcularIMC} />
+      <Botao onClick={calcularIMC} disabled={!peso || !altura} />
       <Resultado imc={resultado} />
     </div>
   );

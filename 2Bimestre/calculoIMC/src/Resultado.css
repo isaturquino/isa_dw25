@@ -1,0 +1,12 @@
+.resultado{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 2px solid #da627d;
+    border-radius: 5%;
+}
+.resultado p {
+    margin: 5px;
+    color: #a53860;
+    font-weight:bold ;
+}
