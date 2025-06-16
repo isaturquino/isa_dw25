@@ -15,7 +15,7 @@ export default function TarefaInput({onAddTarefa}) {
         <div>
             <input type="text" placeholder="Digite o nome da tarefa" value={descricao} onChange={(e)=>{setDescricao(e.target.value)}} />
 
-            <button onAuxClick={adicionar}>Adicionar</button>
+            <button onClick={adicionar}>Adicionar</button>
         </div>
     )
 }

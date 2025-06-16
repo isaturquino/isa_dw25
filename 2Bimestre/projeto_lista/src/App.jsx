@@ -4,32 +4,36 @@ import TarefaList from './TarefaList'
 import { useState } from 'react'
 
 function App() {
-  const [arr_tarefas, setTarefas]=useState([])
+  const [arr_tarefas, setTarefas] = useState([])
+
   const adicionarTarefa = (descricao) => {
-    const novaTarefa = {id: Date.now(), descricao, concluida: false }
-      setTarefas([...arr_tarefas, novaTarefa])
+    const novaTarefa = { id: Date.now(), descricao, concluida: false }
+    setTarefas([...arr_tarefas, novaTarefa])
   }
 
   const concluirTarefa = (id) => {
-    arr_tarefas.map((tarefa) => 
-      tarefa.id === id ? {...arr_tarefas, concluida: !tarefa.concluida} : tarefa
-  )
-  const removerTarefa = (id) => {
-      setTarefas(arr_tarefas.filter((tarefa)=>tarefa.id!==id))
+    setTarefas(
+      arr_tarefas.map((tarefa) =>
+        tarefa.id === id ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
+      )
+    )
   }
 
-  return(
+  const removerTarefa = (id) => {
+    setTarefas(arr_tarefas.filter((tarefa) => tarefa.id !== id))
+  }
+
+  return (
     <div>
       <h1>Gerenciar de Tarefas</h1>
-      <TarefaInput onAddTarefa={adicionarTarefa}/>
+      <TarefaInput onAddTarefa={adicionarTarefa} />
       <TarefaList
-      tarefas={arr_tarefas}
-      onConcluir={concluirTarefa}
-      onRemover={removerTarefa}
+        tarefas={arr_tarefas}
+        onConcluir={concluirTarefa}
+        onRemover={removerTarefa}
       />
     </div>
   )
 }
-}
 
-export default App;
+export default App

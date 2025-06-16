@@ -1,17 +1,16 @@
 import TarefaItem from "./TarefaItem"
 
-
-export default function TarefaList({tarefas, onToggleConcluir, onRemoverTarefa }){
-    return (
-        <ul>
-            {tarefas.map((tarefa)=> {
-                <TarefaItem
-                    tarefa={tarefa}
-                    onToggleConcluir={onToggleConcluir}
-                    onRemoverTarefa={onRemoverTarefa}
-                />
-
-            })}
-        </ul>
-    )
+export default function TarefaList({ tarefas, onConcluir, onRemover }) {
+  return (
+    <ul>
+      {tarefas.map((tarefa) => (
+        <TarefaItem
+          key={tarefa.id}
+          tarefa={tarefa}
+          onConcluir={onConcluir}
+          onRemover={onRemover}
+        />
+      ))}
+    </ul>
+  )
 }
