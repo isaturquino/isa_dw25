@@ -1,16 +1,11 @@
 import "./styles/global.css";
 import "./styles/theme.css";
+import Contador from "./components/Contador";
 
 export default function App() {
   return (
     <div>
-      <h1>Contador</h1>
-      <div>0</div>
-      <div>
-        <button>-</button>
-        <button>+</button>
-      </div>
-      <button>Reset</button>
+      <Contador/>
     </div>
   );
 }
