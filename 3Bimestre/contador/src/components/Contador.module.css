@@ -1,34 +1,38 @@
-
-
 .container{
-    background-color: bisque;
-    max-width: 90rem;
+    background-color: var(--gray-700);
+    padding: 8rem;
+    border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-.titulo{
+    align-items: center;
+  }
+  
+  .titulo {
     color: var(--primary);
-}
-.contadorDisplay{
-    font-size: 3rem;
+  }
+  
+  .contadorDisplay {
+    font-size: 3.5rem;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--text-default);
     padding: 2rem;
-}
-.botaoContainer{
-    padding: 2rem;
+  }
+  
+  .botaoContainer{
+    display: flex;
     gap: 1rem;
-}
-
-.botao{
+  }
+  
+  .botao{
     padding: 2rem;
-    background-color: var(--gray-300);
-
+    margin: 1rem;
+    background-color: var(--gray-200);
+    color:var(--gray-800);
+  
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.8rem;
     font-weight: bold;
-}
+  }
